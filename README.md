@@ -13,4 +13,6 @@ foram abordados por mim ao criar esse blog fictício. Sem contar que adorei dese
 <img src="https://github.com/sian19/Blog/blob/master/images/Img-projeto3.png">
 
 <p>Abaixo temos imagens da versão mobile do blog. Vale resaltar que tive que usar o evento onrize dentro do Javascript, que identifica o tamanho da tela do usuário, para fazer com os elementos do Html que foram modificados através do DOM no Javascript, se ajustarem na tela do usuário para não gerar bugs como o menu mobile sumir ou a box para digitar o login e senha aparecessem mesmo o usuário estando logado. Para fazer com que esses bugs não ocorressem dentro do site, eu usei a propriedade clientwitdh junto com comandos de condição(if e else) para identificar em qual tamanho a tela do usuário está e em qual estado os elementos Html estão, esses estados seriam se por exêmplo o display de uma box estava block ou none ou se o usuário estava logado ou não. Tudo isso feito com Javascript puro sem nenhum framework ou biblioteca. Segue abaixo as imagens:</p>
+<img src="https://github.com/sian19/Blog/blob/master/images/Img-projeto4.png">
 <img src="">
+
