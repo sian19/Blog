@@ -10,4 +10,6 @@ foram abordados por mim ao criar esse blog fictício. Sem contar que adorei dese
 <img src="https://github.com/sian19/Blog/blob/master/images/Img-projeto2.png">
 
 <p>Ao clicar na aba login no canto superior direito, se abrirá um pequeno formulário onde eu setei um login e uma senha fixa para serem digitadas pelo usuário para entar no modo administrador onde aparece uma box contendo o nome 'admin' e um 'x' ao lado para sair do modo administrador. Para desenvolver esse blog dessa forma eu usei o Javascript para manipular os elementos através do DOM, dessa forma transformando os elementos Html, para assim serem modificados através do Javascript:</p>
-<img src="">
+<img src="https://github.com/sian19/Blog/blob/master/images/Img-projeto3.png">
+
+<p>Abaixo temos imagens da versão mobile do blog. Vale resaltar que tive que usar o evento onrize dentro do Javascript, que identifica o tamanho da tela do usuário, para fazer com os elementos do Html que foram modificados através do DOM no Javascript, se ajustarem na tela do usuário para não gerar bugs como o menu mobile sumir ou a box para digitar o login e senha aparecessem mesmo o usuário estando logado. Para fazer com que esses bugs não ocorressem dentro do site, eu usei a propriedade clientwitdh junto com comandos de condição(if e else) para identificar em qual tamanho a tela do usuário está e em qual estado os elementos Html estão, esses estados seriam se por exêmplo o display de uma box estava block ou none ou se o usuário estava logado ou não. Segue abaixo as imagens:</p>
