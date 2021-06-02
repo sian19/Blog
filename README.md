@@ -19,5 +19,7 @@ foram abordados por mim ao criar esse blog fictício. Sem contar que adorei dese
 <h3>Link do projeto</h3>
 <a href="https://blog-nu-blush.vercel.app/">Click aqui</a>
 
+### O projeto ainda não está completo falta desenvolver as páginas restantes
+
 
 
