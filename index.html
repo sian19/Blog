@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Blogr</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="shortcut icon" type="image-x/png" href="">
+    <meta name="description" content="lane-page de um blog">
+    <meta name="keywords" content="blogr, lane-page blog">
+    <meta name="author" content="Sean Taron">
+    <script src="JS/script.js"></script>
+</head>
+<body>
+    <header>
+
+        <div class="profile-mobile" title="clic no x para deslogar" onclick="exit()"> <!--Profile mobile-->
+            <p>ADMIN</p>
+            <div class="x">x</div>
+        </div>
+
+        <div class="background"> <!--classe da tela login-->
+            <form>
+                <div class="exit" onclick="logBack()"></div>
+                <h2>Preencha com o login e a senha</h2>
+                <div class="input">
+                    <p>*Login</p>
+                    <input type="text" name="login" placeholder="login = admin" id="input1">
+                </div>
+                <div class="input">
+                    <p>*Password</p>
+                    <input type="password" name="password" placeholder="password = admin" id="input2">
+                </div>
+                <div class="submit">
+                    <div class="button" onclick="log()">To enter</div>
+                </div>
+            </form>
+        </div>
+        <div class="center">
+            <div class="logo"></div>
+            <nav class="menu-mobile" onclick="menu()" >
+                <span></span>
+                <span></span>
+                <span></span>
+            </nav> 
+    
+            <div class="menu">
+                <section class="sub-menu">
+                    <nav>
+                        <ul>
+                            <li>
+                                <p onclick="minimenu1()" id="pm1">Product</p> <!--id pm1 e as demais abaixo criadas para não entrar em conflito com as demias tags p-->
+                                <img src="images/icon-arrow-light.svg">
+                            </li>
+                            <li>
+                                <p onclick="minimenu2()" id="pm2">Company</p>
+                                <img src="images/icon-arrow-light.svg">
+                            </li>
+                            <li>
+                                <p onclick="minimenu3()" id="pm3">Connect</p>
+                                <img src="images/icon-arrow-light.svg">
+                            </li>
+                        </ul>
+                        </nav>
+                        
+                        <section class="box">
+                            <div class="minibox">
+                                <p>Overview</p>
+                                <p>Pricing</p>
+                                <p>Marketplace</p>
+                                <p>Features</p>
+                                <p>Integrations</p>
+                            </div>
+                            <div class="minibox">
+                                <p>About</p>
+                                <p>Team</p>
+                                <p>Blog</p>
+                                <p>Careers</p>
+                            </div> 
+                            <div class="minibox">
+                                <p>Contact</p>
+                                <p>Newsletter</p>
+                                <p>Linkedln</p>
+                            </div>
+                        </section>
+                    </nav>
+                </section>   
+
+                <nav class="sub-menu-mobile">
+                    <ul>
+                        <li>
+                            <p onclick="menuMobile1()" id="p1">Product</p>
+                            <img src="images/icon-arrow-dark.svg">
+                        </li>
+                        <div class="minibox-mobile">
+                            <p>Overview</p>
+                            <p>Pricing</p>
+                            <p>Marketplace</p>
+                            <p>Features</p>
+                            <p>Integrations</p>
+                        </div>
+                        <li style="width: 75px;">
+                            <p onclick="menuMobile2()" id="p2">Company</p>
+                            <img src="images/icon-arrow-dark.svg">
+                        </li>
+                        <div class="minibox-mobile">
+                            <p>About</p>
+                            <p>Team</p>
+                            <p>Blog</p>
+                            <p>Careers</p>
+                        </div> 
+                        <li>
+                            <p onclick="menuMobile3()" id="p3">Connect</p>
+                            <img src="images/icon-arrow-dark.svg">
+                        </li>
+                        <div class="minibox-mobile">
+                            <p>Contact</p>
+                            <p>Newsletter</p>
+                            <p>Linkedln</p>
+                        </div>
+                    </ul>
+                    <section class="login-sign-mobile">
+                        <ul>
+                            <li id="log-tela-mobile" onclick="loginMobile()">Login</li>
+                            <li>Sign Up</li>
+                        </ul>
+                    </section>
+                </nav>
+
+                <section class="login-sign">
+                    <div class="profile" title="clique no x acima para deslogar"> <!--Profile de login-->
+                        <p>ADMIN</p>
+                        <div class="x" onclick="exit()">x</div>
+                    </div>
+                    <ul id="ul">
+                        <li id="log" onclick="login()">Login</li>
+                        <li>Sign Up</li>
+                    </ul>
+                </section>
+            </div>
+
+
+            <section class="text-header">
+                <h1>A modern publishing platform</h1>
+                <p>Grow your audience and build your online brand</p>
+                <div class="flex-link">
+                    <li><a href="">Start for free</a></li>
+                    <li><a href="">Learn more</a></li>
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <main> <!--Conteúdo do site-->
+        <div class="introdution"> <!--introdution-->
+            <div class="title"><h2>Designed for the future</h2></div>
+            <div class="center">
+                <div class="flex-intro">
+                    <section class="wraper-intro">
+                        <h3>Introducing an extensible editor</h3>
+                        <p>Bloggr features an exceedingly intuitive interface which lets you focus on
+                            one thing: creating content. The editor supports management of multiple blogs
+                            and allows easy manipulation of embeds such as images, videos, and Markdown.
+                            Extensibility with plugins and themes provide easy ways to add functionality
+                            or chance the looks of a blog.
+                        </p>
+
+                        <h3>Robust content management</h3>
+                        <p>Flexible content management enables users to easily move through
+                            posts. Increase the usability of your blog by adding customized
+                            categories, sections, format, or flow. With this functionality, you´re in
+                            full control.
+                        </p>
+                    </section>
+                    <section class="wraper-img"><img src="images/illustration-editor-mobile.svg"></section>
+                </div>
+            </div>
+        </div>
+        <div class="img-phone"> <!--classe criada para armazenar a imagem do phone mobile-->
+            <img src="images/illustration-phones.svg">
+        </div>
+        <div class="container">
+            <div class="infra"> <!--infrastructure-->
+                <div class="center">
+                    <section class="wraper-infra-1">
+                        <div class="back-img"></div>
+                        <img src="images/illustration-phones.svg">
+                    </section>
+                    <section class="wraper-infra-2">
+                        <h2>State of the Art Infrastructure</h2>
+                        <p>With reliability and speed in mind, worldwide data centers provide the
+                            backbone for ultra-fast connectivity. This ensures your site will load
+                            instantly, no matter where your readers are, keeping your site
+                            competitive.
+                        </p>
+                    </section>
+                </div>
+            </div>
+
+            <div class="laptop"> <!--Laptop-->
+                <div class="center">
+                    <section class="wraper-comput">
+                        <img src="images/illustration-laptop-mobile.svg">
+                    </section>
+                    <section class="text">
+                        <h2>Free, open, simple</h2>
+                        <p>Blog is a free and open source application backed by a large 
+                            comumunity of helpful. It supports features such as code 
+                            syntax highligthting. RSS, feeds, social media integration, third-party 
+                            commenting tools, and works seamlessly with Google Analytics. The 
+                            architecture is clean and is relatively easy to learn.
+                        </p>
+
+                        <h2>Powerful tooling</h2>
+                        <p>Batteries included. We built a simple and straightforward CLI tool that 
+                            makes customization and deployment a breeze, but capable of 
+                            producing even the most complicated sites.
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="center">
+            <section class="logo"></section>
+            <section class="footer-box">
+                <div class="title">Product</div>
+                <div class="content">
+                    <p>Overview</p>
+                    <p>Pricing</p>
+                    <p>Marketplace</p>
+                    <p>Features</p>
+                    <p>Integrations</p>
+                </div>
+            </section>
+            <section class="footer-box">
+                <div class="title">Company</div>
+                <div class="content">
+                    <p>About</p>
+                    <p>Team</p>
+                    <p>Blog</p>
+                    <p>Careers</p>
+                </div>
+            </section>
+            <section class="footer-box">
+                <div class="title">Connect</div>
+                <div class="centent">
+                    <p>Contact</p>
+                    <p>Newsletter</p>
+                    <p>Linkedln</p>
+                </div>
+            </section>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>
