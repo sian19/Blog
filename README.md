@@ -6,4 +6,5 @@ foram abordados por mim ao criar esse blog fictício. Sem contar que adorei dese
 <h3>Imagens do projeto:</h3>
 <img src="https://github.com/sian19/Blog/blob/master/images/Img-projeto1.png">
 
-<p>Abaixo eu usei o evento click no Javascript, para fazer com que o usuário ao clicar nos links do menu, abrisse uma pequena box contendo uma lista com alguns links dentro dela.  As box com os links estão completamente responsivas e também usei </p>
+<p>Abaixo eu usei o evento click no Javascript, para fazer com que o usuário ao clicar nos links do menu, abrisse uma pequena box contendo uma lista com alguns links dentro dela.  As boxes com os links estão completamente responsivas e também usei um container com as boxes com uma posição relativa, e em seguida apliquei uma posição absoluta para que as boxes ficassem posicionadas lado a lado em relação ao container:</p>
+<img src="">
